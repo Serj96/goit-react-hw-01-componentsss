@@ -3,7 +3,6 @@ import css from './Transactions.module.css'
 import {TransactionItems} from './TransactionItems/TransactionItems'
 
 export const Transactions = ({items}) => {
- console.log(items);
  return <table className={css.transaction}>
  <thead>
    <tr>
