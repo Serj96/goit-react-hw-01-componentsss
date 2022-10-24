@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Serj96/goit-react-hw-01-componentsss.git/static/css/main.4c92242c.css",
-    "main.js": "/Serj96/goit-react-hw-01-componentsss.git/static/js/main.43674f18.js",
+    "main.css": "/Serj96/goit-react-hw-01-componentsss.git/static/css/main.b410ee39.css",
+    "main.js": "/Serj96/goit-react-hw-01-componentsss.git/static/js/main.e58df662.js",
     "index.html": "/Serj96/goit-react-hw-01-componentsss.git/index.html",
-    "main.4c92242c.css.map": "/Serj96/goit-react-hw-01-componentsss.git/static/css/main.4c92242c.css.map",
-    "main.43674f18.js.map": "/Serj96/goit-react-hw-01-componentsss.git/static/js/main.43674f18.js.map"
+    "main.b410ee39.css.map": "/Serj96/goit-react-hw-01-componentsss.git/static/css/main.b410ee39.css.map",
+    "main.e58df662.js.map": "/Serj96/goit-react-hw-01-componentsss.git/static/js/main.e58df662.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c92242c.css",
-    "static/js/main.43674f18.js"
+    "static/css/main.b410ee39.css",
+    "static/js/main.e58df662.js"
   ]
 }
