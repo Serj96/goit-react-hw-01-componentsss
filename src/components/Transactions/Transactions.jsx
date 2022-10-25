@@ -19,6 +19,6 @@ export const Transactions = ({items}) => {
 </table>
 }
 
-Transactions.prototype = {
+Transactions.propTypes = {
     id: PropTypes.number.isRequired,
 }

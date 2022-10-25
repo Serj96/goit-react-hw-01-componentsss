@@ -9,7 +9,7 @@ export const TransactionItems = ({item}) => {
   </tr>
 }
 
-TransactionItems.prototype = {
+TransactionItems.propTypes = {
     type: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
     amount: PropTypes.number.isRequired,

@@ -4,14 +4,21 @@ import {FriendListItem} from './FriendListItem/FriendListItem';
 
 export const FriendList = ({friends}) => {
     return <ul className="list">
-        {friends.map((friend) => (
-        <FriendListItem key={friend.id} friend={friend}/>
+        {friends.map(({avatar, name, isOnline, id}) => (
+        <FriendListItem key={id} avatar={avatar} name={name} isOnline={isOnline}/>
         ))};
     </ul>
     
 }
 
-FriendList.prototype = {
-    id: PropTypes.number.isRequired,
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+            avatar: PropTypes.string.isRequired, 
+            name: PropTypes.string.isRequired,
+            id: PropTypes.number.isRequired,
+            isOnline: PropTypes.bool.isRequired, 
+        })
+    ).isRequired,
 }
 
