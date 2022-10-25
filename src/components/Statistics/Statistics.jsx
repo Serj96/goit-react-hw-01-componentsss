@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 import {StatisticsItem} from './StatList/StatisticsItem'
  
-export const  Statistics = ({text, stats}) => {
+export const  Statistics = ({title, stats}) => {
     return <section className={css.statistics}>
-    <h2 className={css.title}>{text}</h2>
+    <h2 className={css.title}>{title}</h2>
     <ul className={css.list}>
         
-    {stats.map(stat => (
-        <StatisticsItem key={stat.id} stat={stat}/> 
+    {stats.map(({id, label, percentage}) => (
+        <StatisticsItem key={id} label={label} percentage={percentage}/> 
     ))}
     
     </ul>
@@ -16,5 +16,12 @@ export const  Statistics = ({text, stats}) => {
 }
 
 Statistics.propTypes = {
-    text: PropTypes.string.isRequired
+    text: PropTypes.string.isRequired,
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({
+        id: PropTypes.string.isRequired, 
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired, 
+    })
+    ).isRequired
 }
