@@ -10,7 +10,7 @@ import data from './data/data.json';
 
 export const App = () => {
   return (
-    <BrowserRouter basename="/oit-react-hw-01-componentsss/">
+    <div>
       <Profile 
        username={userCard.username}
        tag={userCard.tag}
@@ -22,7 +22,7 @@ export const App = () => {
      <Statistics text="Upload stats" stats={data}/>
      <FriendList  friends={friends}/>
      <Transactions items={transactions}/>
-    </BrowserRouter>
+    </div>
 
   );
 };
