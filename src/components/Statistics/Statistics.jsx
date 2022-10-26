@@ -4,7 +4,7 @@ import {StatisticsItem} from './StatList/StatisticsItem'
  
 export const  Statistics = ({title, stats}) => {
     return <section className={css.statistics}>
-    <h2 className={css.title}>{title}</h2>
+    <h2 className={`title ${title ? css.title : css.is_hidden}`}>{title}</h2>
     <ul className={css.list}>
         
     {stats.map(({id, label, percentage}) => (
@@ -16,7 +16,7 @@ export const  Statistics = ({title, stats}) => {
 }
 
 Statistics.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     stats: PropTypes.arrayOf(
         PropTypes.shape({
         id: PropTypes.string.isRequired, 
